@@ -26,7 +26,7 @@ public class LoginController {
 			@ModelAttribute("loginBean") LoginBean loginBean) {
 		System.out.println("LoginBean" + loginBean.getUsername() + loginBean.getPassword());
 		ModelAndView model = new ModelAndView("welcome", "loggedInUser", loginBean.getUsername());
-
+		System.out.println("going to welcom.jsp new page ");
 		return model;
 	}
 }
